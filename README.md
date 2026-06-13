@@ -10,11 +10,6 @@ Users can add, edit, reorder, and delete website sections with live preview.
 
 ---
 
-## 📸 Preview
-
-![App Preview](./preview.png)
-
----
 
 ## ✨ Features
 

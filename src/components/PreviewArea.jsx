@@ -71,14 +71,27 @@ export default function PreviewArea() {
                   onClick={() => selectSection(section.id)}
                 >
                   {section.type === "header" && (
-                    <header className="flex items-center justify-between rounded-2xl bg-white px-8 py-5 shadow-md">
-                      <h1 className="text-2xl font-bold">{section.title}</h1>
+                    <header className="flex flex-col gap-4 rounded-2xl bg-white px-4 py-4 shadow-md sm:px-6 sm:py-5 lg:flex-row lg:items-center lg:justify-between">
+                      <h1 className="text-xl font-bold sm:text-2xl">
+                        {section.title}
+                      </h1>
 
-                      <nav className="flex gap-6 text-sm text-gray-600">
-                        <span>Home</span>
-                        <span>About</span>
-                        <span>Services</span>
-                        <span>Contact</span>
+                      <nav className="flex flex-wrap gap-3 text-sm text-gray-600 sm:gap-6">
+                        <span className="cursor-pointer hover:text-blue-600">
+                          Home
+                        </span>
+
+                        <span className="cursor-pointer hover:text-blue-600">
+                          About
+                        </span>
+
+                        <span className="cursor-pointer hover:text-blue-600">
+                          Services
+                        </span>
+
+                        <span className="cursor-pointer hover:text-blue-600">
+                          Contact
+                        </span>
                       </nav>
                     </header>
                   )}

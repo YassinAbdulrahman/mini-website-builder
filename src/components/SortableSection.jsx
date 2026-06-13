@@ -29,40 +29,18 @@ export default function SortableSection({
     <div
       ref={setNodeRef}
       style={style}
-      className={`
-        relative
-        rounded-lg
-        border-2
-        bg-white
-        shadow-sm
-        transition-all
-        ${isSelected ? "border-blue-500 shadow-md" : "border-gray-200"}
-      `}
+      className={`relative rounded-lg border-2 bg-white shadow-sm transition-all ${isSelected ? "border-blue-500 shadow-md" : "border-gray-200"} `}
     >
-      {/* Drag Handle */}
       <div
         ref={setActivatorNodeRef}
         {...listeners}
         {...attributes}
-        className="
-          flex
-          items-center
-          justify-between
-          px-3
-          py-2
-          bg-gray-100
-          border-b
-          cursor-grab
-          active:cursor-grabbing
-          text-sm
-          text-gray-500
-        "
+        className="flex cursor-grab items-center justify-between border-b bg-gray-100 px-3 py-2 text-sm text-gray-500 active:cursor-grabbing"
       >
         <span>Drag Section</span>
         <span>☰</span>
       </div>
 
-      {/* Content */}
       <div onClick={() => onClick?.()} className="cursor-pointer">
         {children}
       </div>

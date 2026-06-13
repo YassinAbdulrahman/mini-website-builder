@@ -6,7 +6,7 @@ Users can add, edit, reorder, and delete website sections with live preview.
 ---
 
 ## 🚀 Live Demo
-> Add your Vercel / deployment link here
+> https://mini-website-builder-six.vercel.app/
 
 ---
 
